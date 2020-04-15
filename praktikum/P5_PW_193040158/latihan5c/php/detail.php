@@ -23,7 +23,8 @@
  	<link rel="stylesheet" href="../css/style.css">
  </head>
  <body>
- 	<div class="container" align="center">
+ 	<div class="container">
+ 		<h1 align="center">PROFILE BUKU</h1>
  		<div class="display">
  			<img width="100px" src="../assets/img/<?= $buku['display'] ?>" alt="">
  		</div>
@@ -33,6 +34,8 @@
  			<p><?= $buku["penerbit"] ?></p>
  			<p><?= $buku["harga"] ?></p>
  		</div>
+		
+		<div class="clear"></div>
 
  		<button class="back"><a href="../index.php">Kembali</a></button>
  	</div>
