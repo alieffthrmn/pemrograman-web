@@ -20,17 +20,18 @@
  <head>
  	<meta charset="UTF-8">
  	<title>Document</title>
+ 	<link rel="stylesheet" href="../css/style.css">
  </head>
  <body>
- 	<div class="container">
+ 	<div class="container" align="center">
  		<div class="display">
- 			<img src="../assets/img/<?= $bk['display'] ?>" alt="">
+ 			<img width="100px" src="../assets/img/<?= $buku['display'] ?>" alt="">
  		</div>
  		<div class="keterangan">
- 			<p><?= $bk['judul'] ?></p>
- 			<p><?= $bk["pengarang"] ?></p>
- 			<p><?= $bk["penerbit"] ?></p>
- 			<p><?= $bk["harga"] ?></p>
+ 			<p><?= $buku['judul'] ?></p>
+ 			<p><?= $buku["pengarang"] ?></p>
+ 			<p><?= $buku["penerbit"] ?></p>
+ 			<p><?= $buku["harga"] ?></p>
  		</div>
 
  		<button class="back"><a href="../index.php">Kembali</a></button>
