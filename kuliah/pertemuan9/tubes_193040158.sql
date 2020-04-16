@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 13, 2020 at 05:53 AM
+-- Generation Time: Apr 16, 2020 at 04:37 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.1.32
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `buku` (
-  `id_buku` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `display` varchar(100) DEFAULT NULL,
   `judul` varchar(100) DEFAULT NULL,
   `pengarang` varchar(100) DEFAULT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE `buku` (
 -- Dumping data for table `buku`
 --
 
-INSERT INTO `buku` (`id_buku`, `display`, `judul`, `pengarang`, `penerbit`, `harga`) VALUES
+INSERT INTO `buku` (`id`, `display`, `judul`, `pengarang`, `penerbit`, `harga`) VALUES
 (1, '1.jpg', 'Gagal menjadi manusia', 'Dazai Osamu', 'Dema Buku', '53.100'),
 (2, '2.jpg', 'Kepunahan Keenam: Sebuah Sejarah Tak Alami', 'Elisabeth Kolbert', 'Gramedia Pustaka Utama', '86.000'),
 (3, '3.jpg', 'Pemimpi(N) Edisi Amandemen', 'Wildan Alamsyah', 'Loveable', '84.000'),
@@ -61,7 +61,7 @@ INSERT INTO `buku` (`id_buku`, `display`, `judul`, `pengarang`, `penerbit`, `har
 -- Indexes for table `buku`
 --
 ALTER TABLE `buku`
-  ADD PRIMARY KEY (`id_buku`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -71,7 +71,7 @@ ALTER TABLE `buku`
 -- AUTO_INCREMENT for table `buku`
 --
 ALTER TABLE `buku`
-  MODIFY `id_buku` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
